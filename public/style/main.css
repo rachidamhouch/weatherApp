@@ -5,7 +5,7 @@
    box-sizing: border-box;
 }
 body{
-    background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-image: url("../imgs/background.jpeg");
     height: 97vh;
     background-size: cover;
     display: flex;
@@ -15,7 +15,7 @@ body{
 
 .container{
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 form{
@@ -23,7 +23,7 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, rgb(5, 5, 197), #ae35ff);
+    background: linear-gradient(135deg, #c35bec, #660abd);
     padding: 20px;
     border-radius: 30px;
 }
@@ -54,11 +54,12 @@ input[type=submit]{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 20px;
+    padding: 50px 10px;
     margin: 20px 0 0 0;
-    background: linear-gradient(135deg, rgb(5, 5, 197), #ae35ff);
+    background: linear-gradient(135deg, #660abd, #c35bec);
     border-radius: 30px;
     color: white;
+    position: relative;
 }
 
 h1{
@@ -71,6 +72,39 @@ h2{
 
 .temp{
     font-size: 80px;
-    margin: 5px;
+    margin: 40px 0 0 0;
     font-weight: bold;
+}
+
+
+.des-icon{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.des{
+    font-size: 30px;
+    margin: 0px 20px 30px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.col img{
+    height: 50px;
+}
+.col p{
+    margin-left: 10px;
+    font-size: 20px;
 }

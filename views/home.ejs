@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>weatherApp</title>
+    <link rel="stylesheet" href="style/main.css">
+    <title>Weather App</title>
 </head>
 <body>
     <div class="container">
         <form action="/" method="POST">
-            <input type="text" placeholder="enter city name">
+            <input type="text" placeholder=" Enter city name">
             <input type="submit" value="🔍">
         </form>
         <div class="card">
             <h1>Guelmim</h1>
             <h2>Souss-Massa</h2>
-            <div class="temp">20.3°C</div>
+            <div class="temp">20.3°C</div>                
+            <div class="des">Clear</div>
+            <img class="des-icon" src="//cdn.weatherapi.com/weather/64x64/night/113.png">
+            <div class="details">
+                <div class="col">
+                    <img src="imgs/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="imgs/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>wind</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
