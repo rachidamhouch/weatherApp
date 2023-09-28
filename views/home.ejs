@@ -9,32 +9,42 @@
 <body>
     <div class="container">
         <form action="/" method="POST">
-            <input type="text" placeholder=" Enter city name">
+            <input type="text" placeholder=" Enter city name" name="city">
             <input type="submit" value="🔍">
         </form>
+        <% if (!locals.error) {%> 
         <div class="card">
-            <h1>Guelmim</h1>
-            <h2>Souss-Massa</h2>
-            <div class="temp">20.3°C</div>                
-            <div class="des">Clear</div>
-            <img class="des-icon" src="//cdn.weatherapi.com/weather/64x64/night/113.png">
+            <h1><%= data.location.name %> </h1>
+            <% if (locals.region) {%> 
+                <h2><%= region %> </h2>
+            <% }else{ %>
+                <h2><%= data.location.region %> </h2>
+            <% } %> 
+            <div class="temp"><%= data.current.temp_c %>°C</div>                
+            <div class="des"><%= data.current.condition.text %></div>
+            <img class="des-icon" src="<%= data.current.condition.icon %>">
             <div class="details">
                 <div class="col">
                     <img src="imgs/humidity.png" alt="">
                     <div>
-                        <p class="humidity">50%</p>
+                        <p class="humidity"><%= data.current.humidity %>%</p>
                         <p>humidity</p>
                     </div>
                 </div>
                 <div class="col">
                     <img src="imgs/wind.png" alt="">
                     <div>
-                        <p class="wind">15 km/h</p>
+                        <p class="wind"><%= data.current.wind_kph %> km/h</p>
                         <p>wind</p>
                     </div>
                 </div>
             </div>
         </div>
+        <% } else{%>
+            <div class="card">
+                <h1 class="error"><%= error %> </h1>
+            </div>
+        <% } %> 
     </div>
 </body>
 </html>

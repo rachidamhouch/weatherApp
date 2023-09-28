@@ -63,11 +63,12 @@ input[type=submit]{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 50px;
 }
 h2{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 0;
+    margin-top: 5px;
 }
 
 .temp{
@@ -107,4 +108,9 @@ h2{
 .col p{
     margin-left: 10px;
     font-size: 20px;
+}
+
+.error{
+    text-align: center;
+    font-size: 30px;
 }
