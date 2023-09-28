@@ -1,3 +1,76 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+}
 body{
-    background-color: aqua;
+    background-image: url("https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    height: 97vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(5, 5, 197), #ae35ff);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+input[type=text]{
+    outline: 0;
+    width: 85%;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    padding: 10PX;
+    font-size: 25PX;
+}
+
+input[type=submit]{
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    padding: 10PX;
+    font-size: 30PX;
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    background: linear-gradient(135deg, rgb(5, 5, 197), #ae35ff);
+    border-radius: 30px;
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 0;
+}
+
+.temp{
+    font-size: 80px;
+    margin: 5px;
+    font-weight: bold;
 }
